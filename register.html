@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPO Registration</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>IPO Registration</h1>
+        <form id="ipo-form">
+            <div class="form-group">
+                <label for="investor-name">Investor Name:</label>
+                <input type="text" id="investor-name" name="investor_name" required>
+            </div>
+            <div class="form-group">
+                <label for="investor-email">Investor Email:</label>
+                <input type="email" id="investor-email" name="investor_email" required>
+            </div>
+            <div class="form-group">
+                <label for="shares-requested">Number of Shares Requested:</label>
+                <input type="number" id="shares-requested" name="shares_requested" min="1" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to external JS -->
+</body>
+</html>
